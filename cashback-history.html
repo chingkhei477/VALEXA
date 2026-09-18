@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cashback History — Valexa</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="dash-header">
+        <div>
+          <h1 style="font-size:1.6rem;">Cashback History</h1>
+          <p class="text-muted">Every purchase you've confirmed through Valexa, and where it stands.</p>
+        </div>
+        <select id="status-filter" aria-label="Filter by status">
+          <option value="">All statuses</option>
+          <option value="pending">Pending</option>
+          <option value="confirmed">Confirmed</option>
+          <option value="credited">Credited</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Store</th><th>Order amount</th><th>Cashback</th><th>Status</th><th>Date</th></tr>
+          </thead>
+          <tbody id="history-rows"></tbody>
+        </table>
+      </div>
+      <p class="empty-state" id="history-empty" hidden>No cashback records match this filter yet.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+<script src="js/history.js"></script>
+</body>
+</html>

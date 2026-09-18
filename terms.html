@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions — Valexa</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Terms &amp; Conditions</h1>
+      <p class="text-muted">Last updated: <span id="terms-date"></span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <p>These Terms govern your use of Valexa. By creating an account or using the site, you agree to them.</p>
+
+      <h2>1. What Valexa is</h2>
+      <p>Valexa is a cashback platform. We display cashback offers from partner stores and track qualifying purchases made after you click through from Valexa, so a share of eligible purchases can be paid back to you.</p>
+
+      <h2>2. Eligibility</h2>
+      <p>You must be at least 18 years old and capable of entering a binding agreement to create a Valexa account. One account is permitted per person.</p>
+
+      <h2>3. Cashback is not guaranteed on every click</h2>
+      <p>Cashback tracking depends on the partner store correctly recording your purchase as originating from Valexa. Ad-blockers, browser extensions, cleared cookies, or shopping through a different link after clicking through Valexa can prevent tracking. Cashback amounts, eligibility, and confirmation timelines are set individually by each partner store and shown on the relevant offer page.</p>
+
+      <h2>4. Pending, confirmed, and credited cashback</h2>
+      <p>Cashback appears as pending until the partner store's return or cancellation window closes, after which it moves to confirmed. Cashback that is confirmed is queued for crediting to your account. Valexa reserves the right to reverse cashback tied to an order that is later cancelled, returned, or found to be fraudulent.</p>
+
+      <h2>5. Account responsibilities</h2>
+      <p>You're responsible for keeping your login credentials confidential and for all activity under your account. Tell us right away if you suspect unauthorised access.</p>
+
+      <h2>6. Acceptable use</h2>
+      <p>You agree not to use automated tools to generate purchases, manipulate cashback tracking, or otherwise interfere with the platform's normal operation.</p>
+
+      <h2>7. Changes to these Terms</h2>
+      <p>We may update these Terms from time to time. Continued use of Valexa after an update means you accept the revised Terms.</p>
+
+      <h2>8. Contact</h2>
+      <p>Questions about these Terms can be sent through our <a href="contact.html">Contact &amp; Support</a> page.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+<script>
+  renderLayout("");
+  document.getElementById("terms-date").textContent = new Date().toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+</script>
+</body>
+</html>

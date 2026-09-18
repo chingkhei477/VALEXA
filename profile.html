@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile & Settings — Valexa</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 style="font-size:1.6rem;">Profile &amp; Settings</h1>
+      <p class="text-muted" style="margin-bottom:28px;">Keep your details current so cashback confirmations reach you.</p>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;" class="profile-grid">
+        <div class="form-card" style="margin:0;">
+          <h2 style="font-size:1.1rem;">Account details</h2>
+          <div id="profile-message" class="form-message" hidden></div>
+          <form id="profile-form">
+            <div class="form-field">
+              <label for="p-name">Full name</label>
+              <input type="text" id="p-name" required>
+            </div>
+            <div class="form-field">
+              <label for="p-email">Email address</label>
+              <input type="email" id="p-email" disabled>
+              <p class="form-hint">Email addresses can't be changed here yet — contact Support if you need this updated.</p>
+            </div>
+            <div class="form-field">
+              <label for="p-phone">Mobile number</label>
+              <input type="tel" id="p-phone" placeholder="10-digit number">
+            </div>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+
+        <div class="form-card" style="margin:0;">
+          <h2 style="font-size:1.1rem;">Change password</h2>
+          <div id="password-message" class="form-message" hidden></div>
+          <form id="password-form">
+            <div class="form-field">
+              <label for="current-password">Current password</label>
+              <input type="password" id="current-password" required>
+            </div>
+            <div class="form-field">
+              <label for="new-password">New password</label>
+              <input type="password" id="new-password" required>
+              <p class="form-hint">At least 8 characters.</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Update password</button>
+          </form>
+        </div>
+      </div>
+      <style>@media (max-width:760px){.profile-grid{grid-template-columns:1fr !important;}}</style>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
